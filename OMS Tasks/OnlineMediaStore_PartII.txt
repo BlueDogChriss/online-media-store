@@ -1,0 +1,64 @@
+Part II: Classes and objects
+
+What this exercise is about
+
+The objective of this exercise is to demonstrate how you can use
+
+Eclipse or Rational Application Developer to implement the
+
+OnlineMedia store, a system for creating orders of compact discs
+
+(CDs), digital video discs (DVDs), and books.
+
+In this exercise, you add some DVDs to an Order (think of it as an
+
+electronic shopping cart). The information about each DVD, such as its
+
+title, cost, and so on, is stored in an external file, called
+
+media.properties. 
+
+Naturally, you create this OnlineMedia store using Java classes,
+
+methods, and so on.
+
+Here are the details of the classes that get built in the exercise:
+
+You first create the OnlineMedia class, which provides a main()
+
+method that interacts with the rest of the system. Then you create the
+
+DigitalVideoDisc class, storing the title, category, cost, director, and
+
+length for each. You also create the Order class to maintain an array of
+
+these DigitalVideoDisc objects.
+The DataFromProperties class is used to set and retrieve key values
+
+from a properties file. You use a predefined media.properties file to
+
+populate data for digital video discs, compact discs, and books.
+
+You then add code to the main() method in the OnlineMedia class to
+
+create an Order. Then you create several DVDs, and then populate
+
+the Order with these DVDs. The DVD titles and other information are
+
+stored in a properties file, which is imported into the OnlineMediaStore
+
+project.
+
+
+What you did in this exercise
+
+In this exercise, you learned how to create and modify Java classes within the Eclipse or
+
+Rational Application Developer workbench. You added getters and setters, modified
+
+variables, and created a main() method. You also created the Java syntax for creating
+
+and using arrays. Finally, you ran your class as a Java application.
+
+Extra: Read from JSON file
+

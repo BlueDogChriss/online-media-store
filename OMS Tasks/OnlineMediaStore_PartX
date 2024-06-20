@@ -1,0 +1,41 @@
+Threads
+
+What this exercise is about
+
+The objective of this exercise is to provide you with a practical
+
+example of how to create and use threads in Java.
+
+In this exercise, you create a Runnable class called MemoryDaemon,
+
+which monitors the memory usage of the OnlineMedia program and
+
+outputs its memory usage as it runs.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore is imported in the first part of the
+
+exercise.
+
+In Part 2, you create the MemoryDaemon class which tracks the
+
+memory usage of the system, and implements the run() method of
+
+this class so it may be run as a thread.
+
+In Part 3, you update the OnlineMedia class to create a
+
+MemoryDaemon object, and then use the object in the constructor of
+
+the Thread class to create a Thread object. The thread is set as a
+
+daemon thread.
+
+When finished, you run the program.
+
+What you did in this exercise
+
+In this exercise, you built and ran a thread using the built-in threading support of the Java
+
+language. You used the Runnable interface.

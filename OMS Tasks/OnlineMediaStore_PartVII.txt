@@ -1,0 +1,10 @@
+Part VI: Generics
+
+	In this exercise, you work with a new Library class
+
+which uses a generic type parameter. Methods to add or remove
+
+tracks from the CompactDisc class are genericized and moved to the
+
+Library class.
+

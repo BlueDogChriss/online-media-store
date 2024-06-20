@@ -1,0 +1,47 @@
+Part IX: Serialization
+
+What this exercise is about
+
+The objective of this exercise is for you to save and restore serialized
+
+objects in Java.
+
+In this exercise, you add the capability of serializing Order objects by
+
+having the Order class and the Media hierarchy implement the
+
+java.io.Serializable interface. In addition, you introduce a new
+
+class called OrderSaver, which is responsible for reading and writing
+
+orders to disk.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore project is imported in the first part of
+
+the exercise.
+
+In Part 2, you make the Order class, Track class, and Media
+
+subclasses serializable by declaring that they implement the
+
+Serializable interface.
+
+In Part 3, you create a class called OrderSaver to serialize and
+
+deserialize Order objects. OrderSaver contains two static methods,
+
+saveOrder() and restoreOrder(), which serialize and deserialize
+
+Order objects.
+
+In Part 4, the OnlineMedia class is updated to serialize an Order
+
+object. You then create an Order object, initializing it by deserializing
+
+the serialized Order. Finally, the class is run.
+
+What you did in this exercise
+
+In this exercise, you serialized and deserialized a Java class to the file system.

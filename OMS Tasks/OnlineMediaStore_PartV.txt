@@ -1,0 +1,37 @@
+Part V: Interfaces
+
+What this exercise is about
+
+The objective of this exercise is to give you practical experience in
+
+using interfaces in Java.
+
+In this exercise, you create an interface called Playable with a single
+
+method, play() and have the CompactDisc, DigitalVideoDisc, and
+
+Track classes implement this interface.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore is imported in the first part of the
+
+exercise.
+
+In Part 2, an interface called Playable is created, which specifies that a
+
+play() method must be implemented by any class that implements this
+
+interface.
+
+In Part 3, you update the CompactDisc, DigitalVideoDisc and Track
+
+objects to implement the Playable interface, and implement a play()
+
+method in each class.
+
+In Part 4, the OnlineMedia class is updated to invoke the play()
+
+method on DigitalVideoDisc and CompactDisc objects before they are
+
+added to the Order

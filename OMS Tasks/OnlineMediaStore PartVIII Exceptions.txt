@@ -1,0 +1,57 @@
+Part VIII: Exceptions
+
+What this exercise is about
+
+The objective of this exercise is to provide you with practical
+
+experience in using exceptions and exception handling within Java.
+
+In this exercise, you create a subclass of Exception called
+
+PlayerException. The PlayerException is raised when the play()
+
+method of a subclass of Media encounters a length of 0. The play()
+
+methods are altered to use try-catch syntax to catch the error.
+
+Throughout this exercise, you are asked to make many changes to
+
+your classes and methods, involving exceptions.
+
+With each change, you introduce errors that must be fixed. By the end
+
+of the exercise, all of the errors are fixed, and you have created,
+
+raised, caught, and reported exceptions.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore project is imported in the first part of
+
+the exercise.
+
+In Part 2, you create a class, PlayerException, which inherits from
+
+java.lang.Exception and acts as an Exception that should be raised
+
+when an error is encountered when media is played.
+
+In Part 3, you update the DigitalVideoDisc and Track classes to throw
+
+a PlayerException. The CompactDisc class is updated to throw a
+
+PlayerException, as well as to handle a PlayerException raised by Track. In addition, the Playable interface is updated to reflect that a
+
+PlayerException may be thrown in the play() method.
+
+In Part 4, the OnlineMedia class is updated to surround the call the
+
+play() methods with try-catch blocks. Once these changes have
+
+been made, you run the program.
+
+What you did in this exercise
+
+In this exercise you created an exception called PlayerException, and added code to your
+
+OnlineMediaStore project to handle this exception.

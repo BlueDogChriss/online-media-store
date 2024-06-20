@@ -1,0 +1,52 @@
+What this exercise is about
+
+The objective of this exercise is for you to use collections in Java as
+
+well as generic type checking provided by the Java compiler.
+
+In this exercise, you begin by extending the OnlineMediaStore system
+
+to allow the ordering of CDs. As with DigitalVideoDisc and Book,
+
+the CompactDisc class extends Media, inheriting the title,
+
+category, and cost fields and the associated methods. In addition, it
+
+stores a String field, artist, and an ArrayList of Tracks called
+
+tracks. The Track class has a title and a length.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore is imported in the first part of the
+
+exercise.
+
+In Part 2, you create a class, Track, which models the track of a
+
+compact disc; fields are added to this class to store appropriate
+
+information.
+
+In Part 3, you create a CompactDisc class, which is a subclass of
+
+Media and models a real-life compact disc. You also add fields to this
+
+class to store information relevant to a compact disc, including an
+
+ArrayList of Track objects to store the tracks of a compact disc.
+
+In Part 4, you add two methods to the DataFromProperties class which
+
+return a CompactDisc and a Track.
+In Part 5, you update the OnlineMedia class to create some Track
+
+objects, add them to a CompactDisc, and then add the CompactDisc
+
+to the Order. The program is then executed.
+
+What you did in this exercise
+
+In this exercise, you learned about collections (java.util.ArrayList) in Java and how to use
+
+generics when instantiating or declaring objects.

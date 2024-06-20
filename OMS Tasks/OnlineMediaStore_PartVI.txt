@@ -1,0 +1,26 @@
+Interfaces and sorting
+
+In Part 5, you implement the Comparable interface on Track, and then
+
+test the compareTo() method. When finished, you run the program.
+
+What you did in this exercise
+
+In this exercise you learned about interfaces in Java and how to use them, specifically the
+
+Comparable interface to sort objects within a collection.
+
+Optional exercise
+
+Suppose you want to sort your Tracks by length, rather than title. What changes would
+
+you need to make to your code to do accomplish it?
+
+Try making the necessary changes to the compareTo() method so that your tracks are
+
+sorted by length, from lowest to highest length.
+
+Hint: The return value of the compareTo() method must look something like:
+
+return Float.compare(...)
+

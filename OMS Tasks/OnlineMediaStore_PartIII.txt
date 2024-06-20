@@ -1,0 +1,62 @@
+What this exercise is about
+
+The objective of this exercise is let you build classes that use Java
+
+inheritance and to use the Eclipse-based features to refactor your
+
+code.
+
+In this exercise, you extend the OnlineMediaStore system that you
+
+created in the previous exercises to allow the ordering of books. You
+
+create a Book class that stores the title, category, cost, and an
+
+ArrayList of authors. Since the Book and DigitalVideoDisc
+
+classes share some common fields and methods, the classes are
+
+refactored and a common superclass (Media) is created. The Order
+
+class is updated to accept any type of Media object.
+
+A new workspace is used for this exercise, and a partially completed
+
+version of the OnlineMediaStore project is imported in the first part of
+
+the exercise.
+
+In Part 2, you create a class, Book, which models a real-life book
+
+object; fields are added to this class to store appropriate information.
+
+In Part 3, you refactor the DigitalVideoDisc and Book classes, creating
+
+a superclass called Media. You add fields to Media to abstract
+
+commonalities of the DigitalVideoDisc and Book classes.
+
+In Part 4, you eliminate code that was abstracted to the Media class
+
+from the DigitalVideoDisc and Book classes, and extend the Media
+
+class in these two classes.
+In Part 5, you view the class hierarchy in the Hierarchy view.
+
+In Part 6, you update the Order class to accept both DigitalVideoDisc
+
+and Book objects; Order is changed to maintain an ArrayList collection
+
+of Media objects.
+
+In Part 7, the OnlineMedia class is updated to use the new
+
+addMedia() method to add Media objects to an Order, rather than
+
+using the addDigitalVideoDisc() method. The application is then
+
+executed.
+
+What you did in this exercise
+
+In this exercise, you refactored the OnlineMediaStore application using inheritance. You also examined the class hierarchy of the Media, Book, and DigitalVideoDisc classes.
