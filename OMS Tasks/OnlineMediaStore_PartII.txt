@@ -28,11 +28,11 @@ You first create the OnlineMedia class, which provides a main()
 
 method that interacts with the rest of the system. Then you create the
 
-DigitalVideoDisc class, storing the title, category, cost, director, and
+DigitalVideoDisk class, storing the title, category, cost, director, and
 
 length for each. You also create the Order class to maintain an array of
 
-these DigitalVideoDisc objects.
+these DigitalVideoDisk objects.
 The DataFromProperties class is used to set and retrieve key values
 
 from a properties file. You use a predefined media.properties file to

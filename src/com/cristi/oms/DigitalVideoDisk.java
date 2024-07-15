@@ -1,62 +1,56 @@
 package com.cristi.oms;
 
-public class DigitalVideoDisk {
+public class DigitalVideoDisk extends Media implements Playable {
+    private String director;
+    private int length;
 
-    public String title;
-    public String category;
-    public double cost;
-    public String director;
-    public float length;
-
-    public DigitalVideoDisk() {
-    }
-
-    public DigitalVideoDisk(String title, String category, double cost, String director, float length) {
-        this.title = title;
-        this.category = category;
-        this.cost = cost;
-        this.director = director;
-        this.length = length;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
+    public DigitalVideoDisk(String title, String category, double cost, String director, int length) {
+        super(title, category, cost);
+        setDirector(director);
+        setLength(length);
     }
 
     public String getDirector() {
         return director;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public float getLength() {
+    public int getLength() {
         return length;
     }
 
-    public void setLength(float length) {
+    public void setDirector(String director) {
+        if (director == null || director.trim().isEmpty()) {
+            throw new IllegalArgumentException("Director cannot be null or empty.");
+        }
+        this.director = director;
+    }
+
+    public void setLength(int length) {
+        if (length < 0) {
+            throw new IllegalArgumentException("Length cannot be negative.");
+        }
         this.length = length;
     }
 
+    @Override
+    public String toString() {
+        return "DigitalVideoDisk{" +
+                "title='" + getTitle() + '\'' +
+                ", category='" + getCategory() + '\'' +
+                ", cost=" + getCost() +
+                ", director='" + director + '\'' +
+                ", length=" + length +
+                '}';
+    }
+
+    @Override
+    public void play() throws PlayerException {
+        if (length == 0) {
+            throw new PlayerException("Cannot play the DVD: " + getTitle() + ". Length is 0.");
+        } else {
+            System.out.println("Playing DVD: " + getTitle());
+            System.out.println("Director: " + getDirector());
+            System.out.println("Length: " + length + " minutes");
+        }
+    }
 }

@@ -6,7 +6,7 @@ well as generic type checking provided by the Java compiler.
 
 In this exercise, you begin by extending the OnlineMediaStore system
 
-to allow the ordering of CDs. As with DigitalVideoDisc and Book,
+to allow the ordering of CDs. As with DigitalVideoDisk and Book,
 
 the CompactDisc class extends Media, inheriting the title,
 

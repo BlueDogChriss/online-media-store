@@ -36,7 +36,7 @@ java.lang.Exception and acts as an Exception that should be raised
 
 when an error is encountered when media is played.
 
-In Part 3, you update the DigitalVideoDisc and Track classes to throw
+In Part 3, you update the DigitalVideoDisk and Track classes to throw
 
 a PlayerException. The CompactDisc class is updated to throw a
 
