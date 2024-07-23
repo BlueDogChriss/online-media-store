@@ -4,10 +4,10 @@ public class DigitalVideoDisk extends Media implements Playable {
     private String director;
     private int length;
 
-    public DigitalVideoDisk(String title, String category, double cost, String director, int length) {
-        super(title, category, cost);
-        setDirector(director);
-        setLength(length);
+    public DigitalVideoDisk(int id, String title, String category, double cost, String director, int length) {
+        super(id, title, category, cost);
+        this.director = director;
+        this.length = length;
     }
 
     public String getDirector() {
@@ -34,10 +34,11 @@ public class DigitalVideoDisk extends Media implements Playable {
 
     @Override
     public String toString() {
-        return "DigitalVideoDisk{" +
-                "title='" + getTitle() + '\'' +
-                ", category='" + getCategory() + '\'' +
-                ", cost=" + getCost() +
+        return "DigitalVideoDisc{" +
+                "id=" + id + // Add this line
+                ", title='" + title + '\'' +
+                ", category='" + category + '\'' +
+                ", cost=" + cost +
                 ", director='" + director + '\'' +
                 ", length=" + length +
                 '}';

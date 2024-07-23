@@ -2,7 +2,6 @@ package com.cristi.oms;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Library<T> implements Serializable {
@@ -24,7 +23,7 @@ public class Library<T> implements Serializable {
     }
 
     public List<T> getItems() {
-        return Collections.unmodifiableList(items);
+        return items;
     }
 
     @Override

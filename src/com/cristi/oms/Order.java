@@ -2,14 +2,15 @@ package com.cristi.oms;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 public class Order implements Serializable {
-    private final List<Media> items;
+    private ArrayList<Media> items;
+    private int itemCount;
 
-    public Order() {
+    // constructor
+    public Order(int maxSize) {
         this.items = new ArrayList<>();
+        this.itemCount = 0;
     }
 
     public void addItem(Media item) {
@@ -17,10 +18,15 @@ public class Order implements Serializable {
             throw new IllegalArgumentException("Item cannot be null.");
         }
         items.add(item);
+        itemCount++;
     }
 
     public double calculateTotal() {
-        return items.stream().mapToDouble(Media::getCost).sum();
+        double total = 0.0;
+        for (Media item : items) {
+            total += item.getCost();
+        }
+        return total;
     }
 
     @Override
@@ -30,18 +36,5 @@ public class Order implements Serializable {
             builder.append(item.getTitle()).append(": $").append(item.getCost()).append("\n");
         }
         return builder.toString();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Order order = (Order) o;
-        return items.equals(order.items);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(items);
     }
 }

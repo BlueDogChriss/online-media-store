@@ -1,13 +1,14 @@
 package com.cristi.oms;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Book extends Media {
+public class Book extends Media{
     private List<String> authors;
 
-    public Book(String title, String category, double cost, List<String> authors) {
-        super(title, category, cost);
-        setAuthors(authors);
+    public Book(int id, String title, String category, double cost, List<String> authors) {
+        super(id, title, category, cost);
+        this.authors = authors;
     }
 
     public List<String> getAuthors() {
@@ -24,9 +25,10 @@ public class Book extends Media {
     @Override
     public String toString() {
         return "Book{" +
-                "title='" + getTitle() + '\'' +
-                ", category='" + getCategory() + '\'' +
-                ", cost=" + getCost() +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", category='" + category + '\'' +
+                ", cost=" + cost +
                 ", authors=" + authors +
                 '}';
     }

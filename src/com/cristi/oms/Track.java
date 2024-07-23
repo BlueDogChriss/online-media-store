@@ -2,32 +2,17 @@ package com.cristi.oms;
 
 import java.io.Serializable;
 import java.util.Objects;
-import java.util.logging.Logger;
 
-public class Track implements Playable, Comparable<Track>, Serializable {
-    private static final long serialVersionUID = 1L;
-    private static final Logger logger = Logger.getLogger(Track.class.getName());
-
-    private String title;
+public class Track extends Media implements Playable, Comparable<Track>, Serializable {
     private int length;
 
-    public Track(String title, int length) {
-        this.title = title;
+    public Track(int id, String title, int length) {
+        super(id, title, "Track", 0.0);
         this.length = length;
-    }
-
-    // Getters
-    public String getTitle() {
-        return title;
     }
 
     public int getLength() {
         return length;
-    }
-
-    // Setters
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public void setLength(int length) {
@@ -37,7 +22,8 @@ public class Track implements Playable, Comparable<Track>, Serializable {
     @Override
     public String toString() {
         return "Track{" +
-                "title='" + title + '\'' +
+                "id=" + id +
+                ", title='" + title + '\'' +
                 ", length=" + length +
                 '}';
     }
@@ -47,16 +33,13 @@ public class Track implements Playable, Comparable<Track>, Serializable {
         if (length == 0) {
             throw new PlayerException("Cannot play the track: " + title + ". Length is 0.");
         } else {
-            logger.info("Playing Track: " + title);
-            logger.info("Length: " + length + " seconds");
+            System.out.println("Playing Track: " + title);
+            System.out.println("Length: " + length + " seconds");
         }
     }
 
     @Override
     public int compareTo(Track other) {
-        if (other == null) {
-            throw new NullPointerException("Cannot compare to null.");
-        }
         return Integer.compare(this.length, other.length);
     }
 

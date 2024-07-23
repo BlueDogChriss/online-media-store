@@ -107,8 +107,6 @@ Q.idea/sonarlint/securityhotspotstore/9/a/9a43762646d6c9d33ccdc2a92292c8078d1078
 Å
 Q.idea/sonarlint/securityhotspotstore/9/5/95d76669527994144035123b16a039fc9f6c6dee,7\1\7114219e65b4a557bff15c17a9259dc42b4e6175
 w
-G.idea/sonarlint/issuestore/8/4/84e95bd0ea795e5307464eb72e7bd95d9f673c00,3\5\356e6a002afeb5e7f9005a0f3c151fd17729b92e
-w
 G.idea/sonarlint/issuestore/f/c/fc51aad2f1ebe72ffedf49fa3dfea24b513ff6fe,1\2\12b81d07a1dc56e90a3f569cafb37f9bdf9b94fa
 Å
 Q.idea/sonarlint/securityhotspotstore/e/0/e0ea4108d198a3d2e4e87c48063db9d2bffad652,e\8\e80c14b69715617f8d7294873564dcb2ae4db8bb
@@ -159,8 +157,6 @@ G.idea/sonarlint/issuestore/3/a/3a6edaa19b768031af6c9381400d36a19f99cb32,4\2\42
 w
 G.idea/sonarlint/issuestore/3/1/31c845172c50fd6cd68741f1ca4248d96436f9df,2\0\20df6c6991517b6deeefda5dfb26d894d8c19f4d
 w
-G.idea/sonarlint/issuestore/3/5/356e6a002afeb5e7f9005a0f3c151fd17729b92e,d\d\dd4b81fa255c69df627a2078fbfcea9dcf334e45
-w
 G.idea/sonarlint/issuestore/d/c/dca526fd278f47862db2c8e8d0e3d6de031f13a8,f\1\f1bf818006025e55eac2b310262f2c82b5ee4a72
 w
 G.idea/sonarlint/issuestore/d/4/d4152bfbafad9144e93dd24fcb13f41564ff7aaa,b\f\bfec5b2f815ea5663253277342efccffb019e326
@@ -206,8 +202,6 @@ G.idea/sonarlint/issuestore/4/7/47deea973d12bd9a7ff5999d20135c170ce61489,6\7\67
 Q.idea/sonarlint/securityhotspotstore/3/a/3a6edaa19b768031af6c9381400d36a19f99cb32,8\f\8f18a430addbe3694d214ef3e20e85a04fe18708
 Å
 Q.idea/sonarlint/securityhotspotstore/3/1/31c845172c50fd6cd68741f1ca4248d96436f9df,f\0\f0222077ad317fffafea6f49946ee132424e544f
-Å
-Q.idea/sonarlint/securityhotspotstore/3/5/356e6a002afeb5e7f9005a0f3c151fd17729b92e,6\f\6fcfcaf443908fe3acb187462192ea754e88f6b3
 Å
 Q.idea/sonarlint/securityhotspotstore/d/c/dca526fd278f47862db2c8e8d0e3d6de031f13a8,d\c\dc0722e12c26f31103cf7b0ba29a2e199ebcf6fc
 Å
@@ -510,14 +504,10 @@ X
 (src/com/cristi/oms/DigitalVideoDisk.java,d\1\d12e66d0fe2577883c1def02ed5cbd430be2ecc0
 M
 src/com/cristi/oms/Order.java,0\5\05ad987d9c3039d8bb89af2131c4a85452f94c3b
-S
-#src/com/cristi/oms/media.properties,5\d\5d4ea8406afbf73f6c8631cb9e04b821596e736f
 L
 src/com/cristi/oms/Book.java,6\a\6ab20cb0d4ede14737a6e2454a2087b62ca59f0f
 S
 #src/com/cristi/oms/CompactDisk.java,e\0\e0967cc9e96d95d636bb1f1d954e5c2cf565a4de
-X
-(src/com/cristi/oms/DigitalVideoDisc.java,7\1\716547dff1cf3875e234aff4666d27d4f78e7740
 X
 (src/com/cristi/oms/DigitalVideoDisK.java,9\4\947eb7043e9c936c29ecccac062a04bbced587d9
 O
@@ -534,3 +524,23 @@ W
 'src/com/cristi/oms/PlayerException.java,5\b\5bff18625ae95ad32f7feb0a1220429453825467
 M
 src/com/cristi/oms/Track.java,f\d\fdae35081213f0d1213f509b5fa1e3f175f51246
+T
+$src/com/cristi/oms/DataFromJDBC.java,7\b\7bd4f38437f4aa9e0b623634e29e0c485a659957
+V
+&src/com/cristi/oms/ConnectionToDB.java,f\0\f0815d10a2708ed2df2f0da9ac4d40d56854fe50
+K
+src/com/cristi/oms/dao.java,2\f\2f5aa29098c9d1c612b66b1ac57be248889d9c7e
+R
+"src/com/cristi/oms/dao/BookDB.java,0\5\05a8a6e1ad89d862475f8149dfdb1d10dbf42667
+Y
+)src/com/cristi/oms/dao/CompactDiskDB.java,3\6\36909b365a286ece1da5d9c3b2ab8561f307d444
+Z
+*src/com/cristi/oms/dao/DigitalVideoDB.java,2\7\273d2bbd2a3003f6289c04f3eca6e97890c6c62d
+S
+#src/com/cristi/oms/dao/MediaDB.java,a\0\a0a84ce11c7b9b49648f1c87cb72870c9c2fb222
+S
+#src/com/cristi/oms/dao/TrackDB.java,6\e\6e043b83c1aaf150412f269bb6cf1d8e2f5a9743
+G
+src/OnlineMediaDAO.java,5\5\55021f374fbc46acdc1e1e0a34f6bcff7e28bd11
+V
+&src/com/cristi/oms/dao/SuperForDB.java,6\a\6a28d1996ae2d02afa72313c7a69f4f85d1e29c6

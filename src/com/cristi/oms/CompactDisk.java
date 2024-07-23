@@ -6,8 +6,8 @@ public class CompactDisk extends Media implements Playable {
     private String artist;
     private Library<Track> trackLibrary;
 
-    public CompactDisk(String title, String category, double cost, String artist) {
-        super(title, category, cost);
+    public CompactDisk(int id, String title, String category, double cost, String artist) {
+        super(id, title, category, cost);
         this.artist = artist;
         this.trackLibrary = new Library<>();
     }
@@ -40,8 +40,9 @@ public class CompactDisk extends Media implements Playable {
 
     @Override
     public String toString() {
-        return "CompactDisk{" +
-                "artist='" + artist + '\'' +
+        return "CompactDisc{" +
+                "id=" + id +
+                ", artist='" + artist + '\'' +
                 ", tracks=" + trackLibrary.getItems() +
                 "} " + super.toString();
     }
@@ -54,7 +55,7 @@ public class CompactDisk extends Media implements Playable {
             try {
                 track.play();
             } catch (PlayerException e) {
-                System.err.println("Error playing track: " + e.getMessage());
+                System.out.println("Error playing track: " + e.getMessage());
             }
         }
     }

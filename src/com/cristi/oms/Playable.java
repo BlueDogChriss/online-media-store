@@ -1,5 +1,5 @@
 package com.cristi.oms;
 
 public interface Playable {
-    void play() throws PlayerException;
+    void play() throws PlayerException;;
 }

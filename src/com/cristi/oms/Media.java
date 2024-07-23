@@ -2,15 +2,21 @@ package com.cristi.oms;
 
 import java.io.Serializable;
 
-public abstract class Media implements Serializable {
+public abstract class Media implements Serializable{
+    protected int id;
     protected String title;
     protected String category;
     protected double cost;
 
-    public Media(String title, String category, double cost) {
-        setTitle(title);
-        setCategory(category);
-        setCost(cost);
+    public Media(int id, String title, String category, double cost) {
+        this.id = id;
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -23,6 +29,10 @@ public abstract class Media implements Serializable {
 
     public double getCost() {
         return cost;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setTitle(String title) {
@@ -49,6 +59,7 @@ public abstract class Media implements Serializable {
     @Override
     public String toString() {
         return "Media{" +
+                "id=" + id +
                 "title='" + title + '\'' +
                 ", category='" + category + '\'' +
                 ", cost=" + cost +
